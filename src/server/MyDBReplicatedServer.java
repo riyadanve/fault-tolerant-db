@@ -288,7 +288,7 @@ public class MyDBReplicatedServer extends SingleServer {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		new AVDBReplicatedServer(NodeConfigUtils.getNodeConfigFromFile
+		new MyDBReplicatedServer(NodeConfigUtils.getNodeConfigFromFile
 				(args[0], ReplicatedServer.SERVER_PREFIX, ReplicatedServer
 						.SERVER_PORT_OFFSET), args[1], new InetSocketAddress
 				("localhost", 9042));
